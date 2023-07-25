@@ -44,12 +44,12 @@
     },
     "dependencies": {
         "@aws-cdk/assertions": "^1.181.1",
-        "@aws-cdk/aws-neptune-alpha": "^2.80.0-alpha.0",
-        "@aws-cdk/aws-servicecatalogappregistry-alpha": "^2.80.0-alpha.0",
+        "@aws-cdk/aws-neptune-alpha": "2.82.0-alpha.0",
+        "@aws-cdk/aws-servicecatalogappregistry-alpha": "2.82.0-alpha.0",
         "@aws-solutions-constructs/aws-cloudfront-s3": "^2.38.0",
         "@aws-solutions-constructs/aws-cognito-apigateway-lambda": "^2.38.0",
         "@aws-solutions-constructs/aws-sqs-lambda": "^2.38.0",
-        "aws-cdk-lib": "^2.80.0",
+        "aws-cdk-lib": "2.82.0",
         "cdk-nag": "^2.27.18",
         "constructs": "^10.1.283",
         "source-map-support": "^0.5.21"

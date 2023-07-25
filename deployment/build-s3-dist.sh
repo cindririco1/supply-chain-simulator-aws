@@ -79,7 +79,7 @@ rm -rf $app_source_dir/supply-chain-simulator-event-generation/node_modules
 
 npm install typescript -g
 
-npm install aws-cdk@2.74.0 -g --force
+npm install aws-cdk@2.88.0 -g --force
 
 
 echo "------------------------------------------------------------------------------"
