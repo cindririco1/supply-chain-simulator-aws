@@ -1,0 +1,41 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "env": {
+        "jest": true,
+        "node": true
+    },
+    "plugins": ["@typescript-eslint", "header", "import"],
+    "rules": {
+        "header/header": [
+            "error",
+            "line",
+            [
+                " Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.",
+                " SPDX-License-Identifier: Apache-2.0"
+            ],
+            2
+        ],
+        "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
+        "@typescript-eslint/no-empty-function": ["warn"],
+        "@typescript-eslint/ban-types": ["warn"]
+    },
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "project": "./tsconfig.json",
+        "sourceType": "module"
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:jsdoc/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "overrides": [
+        {
+            "files": ["**/*.test.js"],
+            "env": {
+                "jest": true
+            }
+        }
+    ]
+}

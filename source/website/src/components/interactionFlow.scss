@@ -1,0 +1,29 @@
+/*
+ * CSS classes for ReactFlow 
+ */
+.react-flow__node-default.selectable.selected {
+    box-shadow: 0 0 0 1.5px #1a192b;
+}
+
+.react-flow__node-location {
+    display: flex;
+    height: 80px;
+    min-width: 150px;
+    border-radius: 10px;
+
+    border: 1px solid #eee;
+    padding: 5px;
+    text-align: center;
+}
+
+.react-flow__node-location .title {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.react-flow__node-location .exception {
+    color: red;
+}
+.react-flow__node-location.selectable.selected {
+    box-shadow: 0 0 0 1.5px #1a192b;
+}

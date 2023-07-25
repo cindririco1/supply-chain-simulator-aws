@@ -1,0 +1,64 @@
+{
+    "name": "plan-execution",
+    "version": "0.9.8",
+    "description": "Takes SQS events and performs CRUD on EventBridge schedules and Neptune DB.",
+    "main": "index.js",
+    "type": "commonjs",
+    "scripts": {
+        "pretest": "npm install",
+        "clean": "npm run cleanup:dist && npm run cleanup:dependencies",
+        "cleanup:dependencies": "rm -rf node_modules",
+        "cleanup:dist": "rm -rf dist",
+        "test": "jest --coverage",
+        "build:init": "rm -rf dist && rm -rf node_modules",
+        "build:zip": "zip -rq --exclude=*tests* --exclude=*template.yml plan-execution.zip .",
+        "build:dist": "mkdir dist && mv plan-execution.zip dist/",
+        "build": "npm run build:init && npm install --production && npm run compile && npm run build:zip && npm run build:dist",
+        "compile": "tsc"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "devDependencies": {
+        "@jest/globals": "^29.3.1",
+        "@types/aws-lambda": "8.10.109",
+        "@types/aws4": "^1.11.2",
+        "@types/gremlin": "^3.6.0",
+        "@types/jest": "^29.2.2",
+        "@types/node": "20.4.4",
+        "@types/pino": "^7.0.5",
+        "@types/prettier": "2.7.2",
+        "@typescript-eslint/eslint-plugin": "^5.62.0",
+        "aws-sdk-client-mock": "2.2.0",
+        "eslint": "^8.28.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-config-standard-with-typescript": "^37.0.0",
+        "eslint-plugin-header": "^3.1.1",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jsdoc": "^46.2.6",
+        "eslint-plugin-n": "^15.7.0",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-promise": "^6.1.1",
+        "jest": "^29.0.0",
+        "prettier": "^2.8.8",
+        "ts-jest": "^29.0.3",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.0.4"
+    },
+    "author": {
+        "name": "Amazon Web Services",
+        "url": "https://aws.amazon.com/solutions"
+    },
+    "license": "Apache-2.0",
+    "dependencies": {
+        "@aws-sdk/client-eventbridge": "3.362.0",
+        "@aws-sdk/client-scheduler": "3.362.0",
+        "async-retry": "1.3.3",
+        "aws4": "^1.12.0",
+        "gremlin": "^3.6.1",
+        "moment": "^2.29.4",
+        "pino": "^8.7.0",
+        "shared": "file:../../shared"
+    }
+}

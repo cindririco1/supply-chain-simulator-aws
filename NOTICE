@@ -1,1 +1,110 @@
+Supply Chain Simulator on AWS
 Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+**********************
+THIRD PARTY COMPONENTS
+**********************
+This software includes third party software subject to the following copyrights:
+
+1. Node.js 
+@aws-amplify/core under the Apache-2.0 license
+@aws-amplify/storage under the Apache-2.0 license
+@aws-amplify/ui-react under the Apache-2.0 license
+@aws-cdk/assertions under the Apache-2.0 license
+@aws-cdk/aws-neptune-alpha under the Apache-2.0 license
+@aws-cdk/aws-servicecatalogappregistry-alpha under the Apache-2.0 license
+@aws-sdk/client-eventbridge under the Apache-2.0 license
+@aws-sdk/client-scheduler under the Apache-2.0 license
+@aws-sdk/client-sqs under the Apache-2.0 license
+@aws-sdk/credential-providers under the Apache-2.0 license
+@aws-sdk/signature-v4 under the Apache-2.0 license
+@aws-sdk/types under the Apache-2.0 license
+@aws-solutions-constructs/aws-cloudfront-s3 under the Apache-2.0 license
+@aws-solutions-constructs/aws-cognito-apigateway-lambda under the Apache-2.0 license
+@aws-solutions-constructs/aws-sqs-lambda under the Apache-2.0 license
+@cloudscape-design/components under the Apache-2.0 license
+@cloudscape-design/design-tokens under the Apache-2.0 license
+@cloudscape-design/global-styles under the Apache-2.0 license
+@cloudscape-design/jest-preset under the Apache-2.0 license
+@emotion/react under the MIT license
+@emotion/styled under the MIT license
+@jest/globals under the MIT license
+@mui/icons-material under the MIT license
+@mui/material under the MIT license
+@mui/x-date-pickers under the MIT license
+@redux-devtools/core under the MIT license
+@reduxjs/toolkit under the MIT license
+@testing-library/dom under the MIT license
+@testing-library/jest-dom under the MIT license
+@testing-library/react under the MIT license
+@testing-library/user-event under the MIT license
+@types/aws-lambda under the MIT license
+@types/aws4 under the MIT license
+@types/gremlin under the MIT license
+@types/jest under the MIT license
+@types/node under the MIT license
+@types/node-fetch under the MIT license
+@types/pino under the MIT license
+@types/prettier under the MIT license
+@types/react under the MIT license
+@types/react-dom under the MIT license
+@types/testing-library__jest-dom under the MIT license
+@types/uuid under the MIT license
+@typescript-eslint/eslint-plugin under the MIT license
+@typescript-eslint/parser under the BSD-2-Clause license
+async-retry under the MIT license
+aws-amplify under the Apache-2.0 license
+aws-cdk under the Apache-2.0 license
+aws-cdk-lib under the Apache-2.0 license
+aws-sdk under the Apache-2.0 license
+aws-sdk-client-mock under the MIT license
+aws4 under the MIT license
+axios under the MIT license
+bootstrap under the MIT license
+case under the (MIT OR GPL-3.0-or-later) license
+cdk-nag under the Apache-2.0 license
+constructs under the Apache-2.0 license
+dayjs under the MIT license
+eslint under the MIT license
+eslint-config-prettier under the MIT license
+eslint-config-standard-with-typescript under the MIT license
+eslint-plugin-header under the MIT license
+eslint-plugin-import under the MIT license
+eslint-plugin-jsdoc under the BSD-3-Clause license
+eslint-plugin-n under the MIT license
+eslint-plugin-node under the MIT license
+eslint-plugin-prettier under the MIT license
+eslint-plugin-promise under the ISC license
+gremlin under the Apache-2.0 license
+identity-obj-proxy under the MIT license
+jest under the MIT license
+jest-environment-jsdom under the MIT license
+jest-mock under the MIT license
+material-react-table under the MIT license
+moment under the MIT license
+msw under the MIT license
+neptune under the ISC license
+node-fetch under the MIT license
+pino under the MIT license
+prettier under the MIT license
+react under the MIT license
+react-bootstrap under the MIT license
+react-dom under the MIT license
+react-redux under the MIT license
+react-router-dom under the MIT license
+react-scripts under the MIT license
+react-toastify under the MIT license
+reactflow under the MIT license
+redux-devtools-extension under the MIT license
+redux-thunk under the MIT license
+sass under the MIT license
+source-map-support under the MIT license
+ts-jest under the MIT license
+ts-node under the MIT license
+typescript under the Apache-2.0 license
+util under the ISC license
+uuid under the MIT license
+web-vitals under the Apache-2.0 license
+
+2. Python
+boto3 under the Apache-2.0 license
