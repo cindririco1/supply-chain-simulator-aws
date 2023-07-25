@@ -1,0 +1,24 @@
+{
+    "name": "shared-util",
+    "version": "0.9.8",
+    "description": "",
+    "dependencies": {
+        "@types/node": "20.1.1"
+    },
+    "devDependencies": {
+        "typescript": "^5.0.4"
+    },
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc -w"
+    },
+    "keywords": [],
+    "author": {
+        "name": "Amazon Web Services",
+        "url": "https://aws.amazon.com/solutions"
+    },
+    "license": "Apache-2.0",
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
