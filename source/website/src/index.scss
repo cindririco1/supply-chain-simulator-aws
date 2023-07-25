@@ -1,0 +1,29 @@
+// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// SPDX-License-Identifier: MIT-0
+@use "~@cloudscape-design/design-tokens" as cs;
+
+.amplify-button--primary {
+    background-color: #eb5f07;
+}
+
+.amplify-tabs-item[data-state="active"] {
+    color: black;
+    border-color: #eb5f07;
+}
+
+.row-action {
+    display: flex;
+    gap: 1rem;
+}
+
+#header {
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: cs.$font-family-base;
+}

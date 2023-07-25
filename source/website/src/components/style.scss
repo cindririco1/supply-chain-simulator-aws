@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    margin-top: 5px;
+    min-height: 50px;
+    width: 100%;
+    background-color: #cbcbcb;
+    border: 1px solid black;
+    position: relative;
+}
+
+.child {
+    right: 0;
+    position: absolute;
+}
+
+.box {
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.button-prim {
+    background: var(--color-background-button-primary-hover-3h3kwa, #eb5f07);
+    color: var(--color-text-button-primary-hover-vtm3ow, #ffffff);
+    border-color: var(--color-background-button-primary-hover-3h3kwa, #eb5f07);
+    text-decoration: none;
+}
+
+.button-second {
+    background: var(--color-background-button-primary-hover-3h3kwa, white);
+    color: var(--color-text-button-primary-hover-vtm3ow, black);
+    border-color: var(--color-background-button-primary-hover-3h3kwa, black);
+    text-decoration: none;
+}
+
+.button-submit {
+    background: var(--color-background-button-primary-hover-3h3kwa, green);
+    color: var(--color-text-button-primary-hover-vtm3ow, white);
+    border-color: var(--color-background-button-primary-hover-3h3kwa, green);
+    text-decoration: none;
+}
+
+/*
+ * CSS classes for Tool Tip
+ */

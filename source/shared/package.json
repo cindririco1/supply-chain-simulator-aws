@@ -1,0 +1,26 @@
+{
+    "name": "shared",
+    "version": "0.9.8",
+    "description": "Provides shared helpers for SupplyChainSimulatorOnAWSStack",
+    "dependencies": {
+        "@types/node": "20.1.1"
+    },
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc -w",
+        "postinstall": "(cd api && npm install && npm run build); (cd neptune && npm install && npm run build); (cd util && npm install && npm run build)",
+        "test": "(cd neptune && jest --passWithNoTests); (cd api && jest --passWithNoTests)"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "keywords": [],
+    "author": {
+        "name": "Amazon Web Services",
+        "url": "https://aws.amazon.com/solutions"
+    },
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "typescript": "^5.0.4"
+    }
+}
