@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import * as cdk from "@aws-cdk/core";
-import { CfnOutput, CfnParameter, Stack, StackProps } from "aws-cdk-lib";
+import { Aws, CfnOutput, CfnParameter, Stack, StackProps } from "aws-cdk-lib";
 import { Construct } from "constructs";
 import { ApiMetricsConstructProps } from "../../shared/api/apiMetrics";
 
@@ -113,7 +113,7 @@ export class SupplyChainSimulatorOnAWSStack extends Stack {
         });
 
         const sourceCode = new SourceBucketConstruct(this, "SourceBucket", {
-            sourceCodeBucketName: props.solutionBucketName
+            sourceCodeBucketName: `${props.solutionBucketName}-${Aws.REGION}`
         });
         const sourceCodeBucket = sourceCode.sourceCodeBucket;
         const sourceCodePrefix = `${props.solutionName}/${props.solutionVersion}`;
